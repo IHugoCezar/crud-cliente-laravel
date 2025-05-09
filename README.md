@@ -16,6 +16,24 @@ Aplicação Laravel para gerenciamento de clientes com CRUD completo, utilizando
 - Edição de clientes
 - Sistema de armazenamento local de fotos
 
+## 📸 Screenshots da Aplicação
+
+### Listagem de Clientes
+![Tela de Listagem](docs/images/listagem.png)  
+*Interface principal com todos os clientes cadastrados*
+
+### Cadastro de Novo Cliente
+![Tela de Cadastro](docs/images/cadastro.png)  
+*Formulário para inclusão de novos clientes*
+
+### Detalhes do Cliente
+![Tela de Detalhes](docs/images/detalhes.png)  
+*Visualização completa dos dados de um cliente específico*
+
+### Edição de Registro
+![Tela de Edição](docs/images/edicao.png)  
+*Formulário para atualização dos dados do cliente*
+
 ## 🚀 Pré-requisitos
 
 Antes de começar, verifique se você possui os seguintes requisitos instalados:
