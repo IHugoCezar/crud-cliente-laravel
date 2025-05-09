@@ -1,0 +1,148 @@
+:root {
+    --primary: #ff7b25;
+    --primary-light: #ff9d5c;
+    --primary-dark: #e56a1a;
+    --text: #333333;
+    --text-light: #666666;
+    --background: #f8f9fa;
+    --white: #ffffff;
+    --border: #e0e0e0;
+    --error: #dc3545;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light);
+}
+
+.nav-link:hover {
+    color: var(--primary-dark);
+    background-color: rgba(255, 123, 37, 0.1);
+}
+
+.nav-link svg {
+    margin-right: 8px;
+}
+
+h2 {
+    color: var(--primary);
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--text);
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 123, 37, 0.2);
+}
+
+input::placeholder {
+    color: var(--text-light);
+    opacity: 0.7;
+}
+
+.error-message {
+    color: var(--error);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.foto-preview {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--primary-light);
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
